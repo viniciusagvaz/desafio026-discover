@@ -7,7 +7,11 @@
 
 
 
-![image](https://github.com/viniciusagvaz/desafio-discover-receitaJunina/assets/109700331/c2ad2225-0cd5-4766-8d86-39f7c12e4dd2)
+![image](https://github.com/viniciusagvaz/desafio-discover-receitaJunina/assets/109700331/99e34733-7ead-4f3f-95e3-326e8d090e45)
+
+
+
+
 
 
 <h2>Original:</h2>
