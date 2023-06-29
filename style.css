@@ -107,7 +107,7 @@ section #bottom-div {
 section #bottom-div .card-title {
    display: flex;
    align-items: baseline;
-   gap: 0.6rem;
+   gap: 0.4rem;
    margin-bottom: 0.6rem;
 }
 
@@ -173,6 +173,9 @@ footer {
       gap: 3rem;
    }
 
+   section #bottom-div .card-title img {
+      width: 1.8rem;
+   }
 
    section .card li {
       margin: 0.8rem 0;
@@ -197,6 +200,10 @@ footer {
 
    section #top-div h3 {
       font-size: 1rem;
+   }
+
+   section #bottom-div .card-title img {
+      width: 1rem;
    }
 
    section #bottom-div h3 {
