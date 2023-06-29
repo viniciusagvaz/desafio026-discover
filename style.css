@@ -67,7 +67,7 @@ main #top-div h2 {
 }
 
 main #top-div h3 {
-   font-size: 1.750rem;
+   font-size: 2.18rem;
    font-weight: 400;
    color: var(--light-brown);
 }
@@ -77,7 +77,7 @@ main .portions {
 }
 
 main .portions img {
-   width: 2.5rem;
+   width: 3rem;
    padding: 0 0.6rem;
 }
 
@@ -112,12 +112,12 @@ section #bottom-div img {
 
 section #bottom-div h3 {
    font-size: 2.175rem;
-   font-weight: 400;
+   font-weight: 600;
 }
 
 section #bottom-div li {
    color: #ffffff;
-   max-width: 663px;
+   max-width: 43.75rem;
    list-style-position: inside;
    font-size: 1.75rem;
    font-weight: 400;
