@@ -27,7 +27,7 @@ Quantity = {
 
    updatePortions() {
       document
-         .querySelector('.portionsQuantity')
+         .querySelector('.portionsQuantity span')
          .innerHTML = number < 10 ? `0${number}` : number
    }
 }

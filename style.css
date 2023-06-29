@@ -3,8 +3,8 @@
 :root {
    --top-bg: #ffede1;
    --bottom-bg: #9b6749;
-   --title-brown: #58190A;
-   --subtitle-brown: #9B6647;
+   --dark-brown: #58190A;
+   --light-brown: #9B6647;
    --subtle-brown: #FEECE0;
 }
 
@@ -54,19 +54,19 @@ main #pacoca-pic img{
 main #top-div h1 {
    font-size: 4rem;
    font-weight: 600;
-   color: var(--title-brown);
+   color: var(--dark-brown);
 }
 
 main #top-div h2 {
    font-size: 2rem;
    font-weight: 400;
-   color: var(--subtitle-brown);
+   color: var(--dark-brown);
 }
 
 main #top-div h3 {
    font-size: 1.4rem;
    font-weight: 400;
-   color: var(--subtitle-brown);
+   color: var(--light-brown);
 }
 
 main .portions {
@@ -74,7 +74,7 @@ main .portions {
 }
 
 main .portions img {
-   width: 2.2rem;
+   width: 2.5rem;
    padding: 0 0.6rem;
 }
 
@@ -113,6 +113,7 @@ section #bottom-div h3 {
 }
 
 section #bottom-div li {
+   color: #ffffff;
    max-width: 663px;
    list-style-position: inside;
    font-size: 1rem;
@@ -139,7 +140,7 @@ section #bottom-div li {
    
    main #top-div h2 {
       font-size: 0.82rem;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.4rem;
    }
    
    main #top-div h3 {
