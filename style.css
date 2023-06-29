@@ -74,7 +74,7 @@ main .portions {
 }
 
 main .portions img {
-   width: 2.5rem;
+   width: 2.2rem;
    padding: 0 0.6rem;
 }
 
@@ -127,5 +127,34 @@ section #bottom-div li {
    section #bottom-div {
       flex-direction: column;
       gap: 3rem;
+   }
+}
+
+@media (max-width: 480px) {
+   
+   main #top-div h1 {
+      text-align: center;
+      font-size: 2rem;
+   }
+   
+   main #top-div h2 {
+      font-size: 0.82rem;
+      margin-bottom: 0.5rem;
+   }
+   
+   main #top-div h3 {
+      font-size: 1rem;
+   }
+
+   section #bottom-div h3 {
+      font-size: 1.2rem;
+      font-weight: 400;
+   }
+   
+   section #bottom-div li {
+      max-width: 663px;
+      list-style-position: inside;
+      font-size: 0.9rem;
+      font-weight: 400;
    }
 }
