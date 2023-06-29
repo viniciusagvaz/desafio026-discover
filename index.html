@@ -15,7 +15,7 @@
       <section id="top-section">
          <div id="top-div" class="container">
             <div id="pacoca-pic">
-               <img src="/pacoca.png" alt="">
+               <img src="./img/pacoca.png" alt="">
             </div>
 
             <div id="pacoca-container">
@@ -23,20 +23,29 @@
                   <h1>Paçoca</h1>
                   <h2>Doce típico feito com amendoim</h2>
                </div>
+
                <div class="portions">
-                  <label for="quantity">Porções</label>
-                  <button class="less"> - </button>
-                  <h3>01</h3>
-                  <button class="more">+</button>
+                  <h3>Porções</h3>
+
+                  <img onclick="Quantity.less()" class="less"
+                     src="./img/less.svg" alt="">
+
+
+                  <h3 class="portionsQuantity">01</h3>
+                  
+                  <!-- <input inputmode="numeric" maxlength="2" value="08"> -->
+
+                  <img onclick="Quantity.more()" src="./img/more.svg" alt="">
+
                </div>
             </div>
          </div>
       </section>
 
-      <section>
-         <div id="bottom">
+      <section id="bottom-section">
+         <div id="bottom-div" class="container">
             <div id="ingredients">
-               <h3>Ingredientes</h3>
+               <h3><img src="./img/ingredients.svg" alt="">Ingredientes</h3>
 
                <ul class="ingrdients-list">
                   <li>ingredient</li>
@@ -48,7 +57,7 @@
             </div>
 
             <div id="recipe">
-               <h3>Modo de preparo</h3>
+               <h3><img src="./img/recipe.svg" alt="">Modo de preparo</h3>
 
                <ol>
                   <li>Passo</li>

@@ -1,34 +1,102 @@
-/* background: #9b6749; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
+
+:root{
+   --top-bg: #ffede1;
+   --bottom-bg: #9b6749;
+   --title-brown: #58190A;
+   --subtitle-brown: #9B6647;
+   --subtle-brown: #FEECE0;
+}
 
 
 * {
    margin: 0;
    padding: 0;
-   box-sizing: border-box;
+   font-family: "Source Serif 4", serif;
 }
 
-body {
+html {
    height: 100vh;
    width: 100vw;
 }
+
 
 .container {
    max-width: 1600px;
    margin: 0 4rem;
 }
 
+/* --------- TOP --------- */
+
 section#top-section {
-   background: #ffede1;
+   background: var(--top-bg);
 }
 
 main #top-div {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+
    padding: 4rem 0;
 }
 
 main #top-div img {
    max-width: 280px;
    border-radius: 50%;
+}
+
+main #top-div h1 {
+   font-size: 4rem;
+   font-weight: 600;
+   color: var(--title-brown);
+}
+
+main #top-div h2 {
+   font-size: 2rem;
+   font-weight: 400;
+   color: var(--subtitle-brown);
+}
+
+main #top-div h3 {
+   font-size: 1.4rem;
+   font-weight: 400;
+   color: var(--subtitle-brown);
+}
+
+main .portions {
+   display: flex;
+}
+
+main .portions input {
+   background: none;
+   border: none;
+   font-size: 1.6rem;
+   color: var(--subtitle-brown);
+   max-width: 32px;
+}
+
+main .portions input:focus {
+   outline: none;
+   
+}
+
+main .portions img {
+   width: 1.4rem;
+   padding: 0 0.6rem;
+}
+
+
+/* --------- BOTTOM --------- */
+
+section#bottom-section {
+   color: var(--subtle-brown);
+   background: var(--bottom-bg);
+}
+
+section #bottom-div {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+
+   padding: 4rem 0;
 }
