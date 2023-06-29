@@ -23,7 +23,7 @@ Quantity = {
       let result = quantity * ingredientQuantity
 
       if (result >= 1000) {
-         return `${result / 1000} kg`
+         return `${result / 1000}kg`
       }
 
       return `${result}g`
@@ -37,7 +37,7 @@ Quantity = {
          .innerHTML = `
             <li>${Quantity.formatIngredients(i1)} de açúcar</li>
             <li>${Quantity.formatIngredients(i2)} de amendoim sem pele torrado</li>
-            <li>${Quantity.formatIngredients(i3)} de farinha de milho flocada amarela</li>
+            <li>${Quantity.formatIngredients(i3)} de farinha de milho flocada</li>
             <li>${quantity} ${spoon} (café) de sal</li>
           `
    },
