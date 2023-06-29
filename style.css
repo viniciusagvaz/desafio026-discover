@@ -16,7 +16,9 @@
 }
 
 html {
-   height: 100%;
+   height: 100vh;
+   width: 100vw;
+   font-size: 16px;
    font-family: "Source Serif 4", serif;
    background: var(--bottom-bg);
 }
@@ -38,13 +40,15 @@ main #top-div {
    align-items: center;
    flex-wrap: wrap;
 
-   padding: 4rem 0;
+   padding: 1rem 0 4rem  0;
 }
 
-main #pacoca-pic img {
-    max-width: 480px;
-  /*border-radius: 10% 40% 5% 30%;
-   border: 1px solid ; */
+main #pacoca-pic {
+   max-width: 30rem;
+}
+
+main #pacoca-pic img{
+   max-width: 100%;
 }
 
 main #top-div h1 {
@@ -116,6 +120,10 @@ section #bottom-div li {
 }
 
 @media (max-width: 768px) {
+   section #top-section {
+      margin-top: 0;
+   }
+
    section #bottom-div {
       flex-direction: column;
       gap: 3rem;
