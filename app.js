@@ -1,14 +1,14 @@
-let number = 1
+let quantity = 1
 
 Quantity = {
    less() {
-      number > 1 ? number-- : number
+      quantity > 1 ? quantity-- : quantity
       Quantity.updatePortions()
       Quantity.updateIngredients()
    },
 
    more() {
-      number < 99 ? number++ : number
+      quantity < 99 ? quantity++ : quantity
       Quantity.updatePortions()
       Quantity.updateIngredients()
    },
@@ -16,16 +16,16 @@ Quantity = {
    updatePortions() {
       document
          .querySelector('.portionsQuantity span')
-         .innerHTML = number < 10 ? `0${number}` : number
+         .innerHTML = quantity < 10 ? `0${quantity}` : quantity
    },
 
    formatIngredients(ingredientQuantity) {
-      let result = number * ingredientQuantity
+      let result = quantity * ingredientQuantity
 
       if (result >= 1000) {
          return `${result / 1000} kg`
       }
-      
+
       return `${result}g`
    },
 
@@ -35,7 +35,7 @@ Quantity = {
          .innerHTML = `
             <li>${Quantity.formatIngredients(500)} de açúcar</li>
             <li>${Quantity.formatIngredients(500)} de amendoim sem pele torrado</li>
-            <li>${number} colher (café) de sal</li>
+            <li>${quantity} colher (café) de sal</li>
             <li>${Quantity.formatIngredients(250)} de farinha de milho flocada amarela</li>
           `
    },
