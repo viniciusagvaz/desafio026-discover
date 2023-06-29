@@ -3,14 +3,12 @@ let quantity = 1
 Quantity = {
    less() {
       quantity > 1 ? quantity-- : quantity
-      Quantity.updatePortions()
-      Quantity.updateIngredients(500, 500, 250)
+      Quantity.updateQuantities()
    },
 
    more() {
       quantity < 99 ? quantity++ : quantity
-      Quantity.updatePortions()
-      Quantity.updateIngredients(500, 500, 250)
+      Quantity.updateQuantities()
    },
 
    formatIngredients(ingredientQuantity) {
@@ -37,4 +35,9 @@ Quantity = {
             <li>${quantity} ${spoon} (café) de sal</li>
           `
    },
+
+   updateQuantities() {
+      Quantity.updatePortions()
+      Quantity.updateIngredients(500, 500, 250)
+   }
 }
