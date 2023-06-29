@@ -3,14 +3,13 @@ let number = 1
 Quantity = {
    less() {
       number > 1 ? number-- : number
-
-      Quantity.updatePortions(number)
+      Quantity.updatePortions()
       Quantity.updateIngredients()
    },
 
    more() {
       number < 99 ? number++ : number
-      Quantity.updatePortions(number)
+      Quantity.updatePortions()
       Quantity.updateIngredients()
    },
 
@@ -22,9 +21,11 @@ Quantity = {
 
    formatIngredients(ingredientQuantity) {
       let result = number * ingredientQuantity
+
       if (result >= 1000) {
          return `${result / 1000} kg`
       }
+      
       return `${result}g`
    },
 
@@ -38,10 +39,7 @@ Quantity = {
             <li>${Quantity.formatIngredients(250)} de farinha de milho flocada amarela</li>
           `
    },
-
 }
 
 Quantity.updatePortions()
 Quantity.updateIngredients()
-
-

@@ -120,6 +120,13 @@ section #bottom-div li {
    font-weight: 400;
 }
 
+
+footer {
+   color: var(--subtle-brown);
+   text-align: center;
+   margin-top: 6rem;
+}
+
 @media (max-width: 768px) {
    section #top-section {
       margin-top: 0;
