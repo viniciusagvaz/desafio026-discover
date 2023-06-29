@@ -27,67 +27,73 @@ body {
 }
 
 .container {
-   max-width: 1600px;
-   margin: 0 4rem;
+   max-width: 1800px;
+   margin: 0 2rem;
 }
 
-/* --------- TOP --------- */
+/* =========== TOP =========== */
 
 section#top-section {
    background: var(--top-bg);
 }
 
-main #top-div {
+section #top-div {
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-between;
    align-items: center;
-   flex-wrap: wrap;
 
-   padding: 4.5rem;
+   padding: 2.5rem;
 }
 
-main #pacoca-pic {
+section #pacoca-pic {
    max-width: 30rem;
    min-width: 17rem;
 }
 
-main #pacoca-pic img {
+section #pacoca-pic img {
    max-width: 100%;
 }
 
-main #top-div h1 {
-   font-size: 4.875rem;
+section #top-div h1 {
+   font-size: 4rem;
    font-weight: 600;
    color: var(--dark-brown);
 }
 
-main #top-div h2 {
-   font-size: 2.175rem;
+section #top-div h2 {
+   font-size: 2rem;
    font-weight: 400;
    color: var(--dark-brown);
 }
 
-main #top-div h3 {
-   font-size: 2.18rem;
+section #top-div h3 {
+   font-size: 1.8rem;
    font-weight: 400;
    color: var(--light-brown);
 }
 
-main .portions {
+section .portions {
    display: flex;
 }
 
-main .portions img {
+section .portions div {
+   display: flex;
+}
+
+section .portions img {
    margin: 0 0.6rem;
 }
 
 
-/* --------- BOTTOM --------- */
+
+
+
+/* =========== BOTTOM =========== */
+
 
 section#bottom-section {
    color: var(--subtle-brown);
    background: var(--bottom-bg);
-   height: 100%;
 }
 
 section #bottom-div {
@@ -102,12 +108,11 @@ section #bottom-div .card-title {
    display: flex;
    align-items: baseline;
    gap: 0.6rem;
-   width: 100%;
    margin-bottom: 0.6rem;
 }
 
 section #bottom-div h3 {
-   font-size: 2.375rem;
+   font-size: 2rem;
    font-weight: 600;
 }
 
@@ -115,62 +120,87 @@ section #bottom-div li {
    color: #ffffff;
    max-width: 43.75rem;
    list-style-position: inside;
-   font-size: 1.55rem;
+   font-size: 1rem;
 }
-
 
 footer {
    color: var(--subtle-brown);
    text-align: center;
-   font-size: 1.4rem;
-   margin-top: 1rem;
+   font-size: 0.8rem;
+   padding-top: 4rem;
 }
 
+
+
+/* =========== QUERIES =========== */
+
 @media (max-width: 768px) {
-   section #top-section {
+   section #top-div {
       margin-top: 0;
+      text-align: center;
+      flex-direction: column;
+   }
+
+   section #top-div h1 {
+      text-align: center;
+      font-size: 3rem;
+   }
+
+   section #top-div h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.4rem;
+   }
+
+   section #top-div h3 {
+      font-size: 1.4em;
+   }
+
+   section .portions {
+      display: block;
+   }
+
+   section .portions div {
+      display: flex;
+      justify-content: center;
+   }
+
+   section .portions img {
+      width: 1.4rem;
    }
 
    section #bottom-div {
       flex-direction: column;
       gap: 3rem;
    }
+
+
+   section .card li {
+      margin: 0.8rem 0;
+   }
+
+   footer {
+      padding: 0;
+   }
 }
 
 @media (max-width: 480px) {
 
-   main #top-div h1 {
+   section #top-div h1 {
       text-align: center;
       font-size: 2rem;
    }
 
-   main #top-div h2 {
+   section #top-div h2 {
       font-size: 0.82rem;
       margin-bottom: 0.4rem;
    }
 
-   main #top-div h3 {
+   section #top-div h3 {
       font-size: 1rem;
    }
-
-   main .portions img {
-      width: 1rem;
-   }
-
 
    section #bottom-div h3 {
       font-size: 1.2rem;
       font-weight: 400;
-   }
-
-   section #bottom-div li {
-      max-width: 663px;
-      list-style-position: inside;
-      font-size: 0.9rem;
-      font-weight: 400;
-   }
-
-   footer {
-      font-size: 0.8rem;
    }
 }
