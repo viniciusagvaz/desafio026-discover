@@ -19,8 +19,11 @@ html {
    height: 100vh;
    width: 100vw;
    font-size: 16px;
-   font-family: "Source Serif 4", serif;
    background: var(--bottom-bg);
+}
+
+body{
+   font-family: "Source Serif 4", serif;
 }
 
 .container {
@@ -40,7 +43,7 @@ main #top-div {
    align-items: center;
    flex-wrap: wrap;
 
-   padding: 1rem 0 4rem  0;
+   padding: 4.5rem;
 }
 
 main #pacoca-pic {
@@ -52,19 +55,19 @@ main #pacoca-pic img{
 }
 
 main #top-div h1 {
-   font-size: 4rem;
+   font-size: 4.875rem;
    font-weight: 600;
    color: var(--dark-brown);
 }
 
 main #top-div h2 {
-   font-size: 2rem;
+   font-size: 2.175rem;
    font-weight: 400;
    color: var(--dark-brown);
 }
 
 main #top-div h3 {
-   font-size: 1.4rem;
+   font-size: 1.750rem;
    font-weight: 400;
    color: var(--light-brown);
 }
@@ -104,11 +107,11 @@ section #bottom-div .card-title {
 }
 
 section #bottom-div img {
-   width: 1.6rem;
+   width: 2rem;
 }
 
 section #bottom-div h3 {
-   font-size: 2rem;
+   font-size: 2.175rem;
    font-weight: 400;
 }
 
@@ -116,7 +119,7 @@ section #bottom-div li {
    color: #ffffff;
    max-width: 663px;
    list-style-position: inside;
-   font-size: 1rem;
+   font-size: 1.75rem;
    font-weight: 400;
 }
 
@@ -124,7 +127,8 @@ section #bottom-div li {
 footer {
    color: var(--subtle-brown);
    text-align: center;
-   margin-top: 6rem;
+   font-size: 1.4rem;
+   margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
