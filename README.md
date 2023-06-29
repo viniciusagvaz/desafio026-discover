@@ -1,4 +1,4 @@
-<h1> Desafio Discover 38/06/2023</h1>
+<h1> Desafio Discover 28/06/2023</h1>
 
 
 <h2 align='center'>Projeto simples em que o usuário escolhe a quantidade de receitas e obtém o valor atualizado da quantidade de ingredientes serão necessários para tal.</h2>
