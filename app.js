@@ -1,35 +1,38 @@
 let number = 1
 
-// const getQuantity = () => {
-//    let value = document.querySelector('input').value
-//    number = Number(value)
-// }
-
-// getQuantity()
-
 Quantity = {
-   print() {
-      document
-         .querySelector('.portionsQuantity')
-         .innerHTML = number < 10 ? `0${number}` : number
-   },
-
    less() {
-      // document
-      //    .querySelector('.portionsQuantity')
-      //    .innerHTML = number
-      number--
+      number > 1 ? number-- : number
 
+      Quantity.updatePortions(number)
+      Quantity.updateIngredients()
    },
 
    more() {
-      // document
-      //    .querySelector('.portionsQuantity')
-      //    .innerHTML = number
-
-      number++
+      number < 99 ? number++ : number
+      Quantity.updatePortions(number)
+      Quantity.updateIngredients()
    },
 
+   updateIngredients() {
+      document
+         .querySelector('ul')
+         .innerHTML = `
+            <li>${500 * number}g de açúcar</li>
+            <li>${500 * number}g de amendoim sem pele torrado</li>
+            <li>${1 * number} colher (café) de sal</li>
+            <li>${500 * number}g de farinha de milho flocada amarela</li>
+          `
+   },
+
+   updatePortions() {
+      document
+         .querySelector('.portionsQuantity')
+         .innerHTML = number < 10 ? `0${number}` : number
+   }
 }
 
-Quantity.print()
+Quantity.updatePortions()
+Quantity.updateIngredients()
+
+
