@@ -1,7 +1,7 @@
 <h1> Desafio Discover 28/06/2023</h1>
 
 
-<h2 align='center'>Projeto simples em que o usuário escolhe a quantidade de receitas e obtém o valor atualizado da quantidade de ingredientes serão necessários para tal.</h2>
+<h2 align='center'>Projeto simples em que o usuário escolhe a quantidade de receitas e obtém o valor atualizado e formatado da quantidade de ingredientes serão necessários.</h2>
 <h3 align='center'>https://viniciusagvaz.github.io/desafio-discover-receitaJunina/</h3>
 
 
