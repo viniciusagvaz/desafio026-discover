@@ -14,22 +14,31 @@ Quantity = {
       Quantity.updateIngredients()
    },
 
-   updateIngredients() {
-      document
-         .querySelector('ul')
-         .innerHTML = `
-            <li>${500 * number}g de açúcar</li>
-            <li>${500 * number}g de amendoim sem pele torrado</li>
-            <li>${1 * number} colher (café) de sal</li>
-            <li>${500 * number}g de farinha de milho flocada amarela</li>
-          `
-   },
-
    updatePortions() {
       document
          .querySelector('.portionsQuantity span')
          .innerHTML = number < 10 ? `0${number}` : number
-   }
+   },
+
+   formatIngredients(ingredientQuantity) {
+      let result = number * ingredientQuantity
+      if (result >= 1000) {
+         return `${result / 1000} kg`
+      }
+      return `${result}g`
+   },
+
+   updateIngredients() {
+      document
+         .querySelector('ul')
+         .innerHTML = `
+            <li>${Quantity.formatIngredients(500)} de açúcar</li>
+            <li>${Quantity.formatIngredients(500)} de amendoim sem pele torrado</li>
+            <li>${number} colher (café) de sal</li>
+            <li>${Quantity.formatIngredients(250)} de farinha de milho flocada amarela</li>
+          `
+   },
+
 }
 
 Quantity.updatePortions()
