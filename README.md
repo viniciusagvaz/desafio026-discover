@@ -2,7 +2,7 @@
 
 
 <h2 align='center'>Projeto simples em que o usuário escolhe a quantidade de receitas e obtém o valor atualizado e formatado da quantidade de ingredientes serão necessários.</h2>
-<h3 align='center'>https://viniciusagvaz.github.io/desafio-discover-receitaJunina/</h3>
+<h3 align='center'>https://viniciusagvaz.github.io/desafio026-discover/</h3>
 
 
 
