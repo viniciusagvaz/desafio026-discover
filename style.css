@@ -36,6 +36,7 @@ main #top-div {
    display: flex;
    justify-content: space-evenly;
    align-items: center;
+   flex-wrap: wrap;
 
    padding: 4rem 0;
 }
@@ -112,4 +113,11 @@ section #bottom-div li {
    list-style-position: inside;
    font-size: 1rem;
    font-weight: 400;
+}
+
+@media (max-width: 768px) {
+   section #bottom-div {
+      flex-direction: column;
+      gap: 3rem;
+   }
 }
