@@ -72,15 +72,15 @@ section #top-div h3 {
    color: var(--light-brown);
 }
 
-section .portions {
+section .recipes {
    display: flex;
 }
 
-section .portions div {
+section .recipes div {
    display: flex;
 }
 
-section .portions img {
+section .recipes img {
    margin: 0 0.6rem;
 }
 
@@ -155,16 +155,16 @@ footer {
       font-size: 1.4em;
    }
 
-   section .portions {
+   section .recipes {
       display: block;
    }
 
-   section .portions div {
+   section .recipes div {
       display: flex;
       justify-content: center;
    }
 
-   section .portions img {
+   section .recipes img {
       width: 1.4rem;
    }
 
@@ -211,3 +211,7 @@ footer {
       font-weight: 400;
    }
 }
+
+::-webkit-scrollbar {
+   width: 0;
+ }

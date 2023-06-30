@@ -17,9 +17,9 @@ Quantity = {
       return result >= 1000 ? `${result / 1000}kg` : `${result}g`
    },
 
-   updatePortions() {
+   updateRecipes() {
       document
-         .querySelector('.portionsQuantity span')
+         .querySelector('.recipesQuantity span')
          .innerHTML = quantity < 10 ? `0${quantity}` : quantity
    },
 
@@ -37,7 +37,7 @@ Quantity = {
    },
 
    updateQuantities() {
-      Quantity.updatePortions()
+      Quantity.updateRecipes()
       Quantity.updateIngredients(500, 500, 250)
    }
 }
