@@ -52,6 +52,7 @@ section #pacoca-pic {
 
 section #pacoca-pic img {
    max-width: 100%;
+   filter: drop-shadow( 5px 7px 5px black);
 }
 
 section #top-div h1 {
