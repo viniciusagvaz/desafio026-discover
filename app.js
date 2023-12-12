@@ -26,14 +26,21 @@ Quantity = {
 		const spoon = quantity > 1 ? `colheres` : `colher`;
 
 		document.querySelector("ul").innerHTML = `
-            <li>${Quantity.formatIngredients(
-							i2
-						)} de amendoim sem pele torrado</li>
-            <li>${Quantity.formatIngredients(i1)} de açúcar</li>
-            <li>${Quantity.formatIngredients(
-							i3
-						)} de farinha de milho flocada</li>
-            <li>${quantity} ${spoon} (café) de sal</li>
+            <li>
+              ${Quantity.formatIngredients(i2)} de amendoim sem pele torrado
+            </li>
+            
+            <li>
+              ${Quantity.formatIngredients(i1)} de açúcar
+            </li>
+            
+            <li>
+              ${Quantity.formatIngredients(i3)} de farinha de milho flocada
+            </li>
+            
+            <li>
+              ${quantity} ${spoon} (café) de sal
+            </li>
           `;
 	},
 
